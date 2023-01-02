@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #113768;
+  --negative-color: #ffffff;
+  --text-color: #000000;
+
+  --padding-s: 8px;
+  --padding-m: 16px;
+  --padding-l: 32px;
+
+  --margin-s: 8px;
+  --margin-m: 16px;
+  --margin-l: 32px;
+}
