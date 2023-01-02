@@ -17,7 +17,7 @@ const createSlide = ({
 export const homeCarouselSlides = [
   createSlide({
     title: "Serviços",
-    description: "Conheça nossos serviços",
+    description: "Conheça nossos serviços!",
     url: "/servicos",
     importedImage: require("./assets/services.webp"),
     imageAlt: "Serviços",
