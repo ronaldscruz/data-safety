@@ -1,1 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@font-face {
+  font-family: Gotham;
+  src: url("/fonts/GothamBook.ttf");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: bolder;
+  src: url("/fonts/GothamBlack.ttf");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: bold;
+  src: url("/fonts/GothamBold.ttf");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: bold;
+  font-style: italic;
+  src: url("/fonts/GothamBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  src: url("/fonts/GothamBookItalic.ttf");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 300;
+  src: url("/fonts/GothamLight.ttf");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 300;
+  font-style: italic;
+  src: url("/fonts/GothamLightItalic.ttf");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 500;
+  src: url("/fonts/GothamMedium.ttf");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 500;
+  font-style: italic;
+  src: url("/fonts/GothamMedium.ttf");
+}

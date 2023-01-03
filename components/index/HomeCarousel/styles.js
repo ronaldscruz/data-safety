@@ -9,6 +9,9 @@ export const Container = styled.section`
 
   .embla__container {
     display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   .embla__slide {

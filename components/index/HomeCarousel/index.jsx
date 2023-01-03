@@ -62,9 +62,15 @@ const HomeCarousel = () => {
 
   const renderSlides = useCallback((slides = []) => {
     return slides.map((slide) => (
-      <article key={slide.url} className="embla__slide">
-        <Image src={slide.importedImage} alt={slide.imageAlt} priority={true} />
-      </article>
+      <li key={slide.url} className="embla__slide">
+        <article>
+          <Image
+            src={slide.importedImage}
+            alt={slide.imageAlt}
+            priority={true}
+          />
+        </article>
+      </li>
     ));
   }, []);
 
@@ -96,9 +102,7 @@ const HomeCarousel = () => {
   return (
     <S.Container className="embla">
       <div className="embla__viewport" ref={carouselRef}>
-        <div className="embla__container">
-          {renderSlides(homeCarouselSlides)}
-        </div>
+        <ul className="embla__container">{renderSlides(homeCarouselSlides)}</ul>
       </div>
       <S.Controllers>
         <S.Controller className="embla__prev" onClick={scrollPrev}>

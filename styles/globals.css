@@ -3,12 +3,14 @@
 @import url("./variables.css");
 
 body {
-  font-family: Noto Sans;
+  font-family: Gotham;
   overflow-x: hidden;
   color: var(--text-color);
 }
 
 a {
+  display: block;
+  cursor: pointer;
   text-decoration: none;
   color: var(--primary-color);
 }

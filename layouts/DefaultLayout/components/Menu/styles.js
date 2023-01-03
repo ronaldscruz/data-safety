@@ -8,14 +8,12 @@ export const Container = styled.nav`
 `;
 
 export const Options = styled.ul`
-  list-style-type: none;
   display: inline-flex;
-  align-items: center;
+  align-items: flex-end;
 `;
 
 export const Option = styled.li`
-  margin: 0 var(--margin-s);
-  font-size: 18px;
+  margin-right: var(--margin-m);
 
   &:last-child {
     margin-right: 0;
