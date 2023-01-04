@@ -16,6 +16,7 @@ const SlidesProgress = ({
               key={dotIndex}
               onClick={() => onNavigate(dotIndex)}
               $selected={currentIndex === dotIndex}
+              aria-label={`Pular para o slide ${dotIndex + 1}`}
             ></S.SlideDot>
           );
         });
