@@ -8,8 +8,8 @@ const Menu = () => {
       <Image
         src="/brand.png"
         alt="Logomarca da Data Safety"
-        width={120}
-        height={34}
+        width={128}
+        height={32}
         priority={true}
       />
       <S.Options>

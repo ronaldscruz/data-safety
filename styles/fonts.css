@@ -1,50 +1,58 @@
 @font-face {
   font-family: Gotham;
-  src: url("/fonts/GothamBook.ttf");
+  src: local("Trebuchet MS"), url("/fonts/GothamBook.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: bolder;
-  src: url("/fonts/GothamBlack.ttf");
+  src: local("Trebuchet MS"), url("/fonts/GothamBlack.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: bold;
-  src: url("/fonts/GothamBold.ttf");
+  src: local("Trebuchet MS"), url("/fonts/GothamBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: bold;
   font-style: italic;
-  src: url("/fonts/GothamBoldItalic.ttf");
+  src: local("Trebuchet MS"), url("/fonts/GothamBoldItalic.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gotham;
   font-style: italic;
-  src: url("/fonts/GothamBookItalic.ttf");
+  src: local("Trebuchet MS"), url("/fonts/GothamBookItalic.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: 300;
-  src: url("/fonts/GothamLight.ttf");
+  src: local("Trebuchet MS"), url("/fonts/GothamLight.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: 300;
   font-style: italic;
-  src: url("/fonts/GothamLightItalic.ttf");
+  src: local("Trebuchet MS"), url("/fonts/GothamLightItalic.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: 500;
-  src: url("/fonts/GothamMedium.ttf");
+  src: local("Trebuchet MS"), url("/fonts/GothamMedium.ttf");
+  font-display: swap;
 }
 
 @font-face {

@@ -17,8 +17,7 @@ const HomeCarousel = () => {
   const [carouselRef, emblaApi] = useEmblaCarousel({
     loop: true,
     dragFree: false,
-    containScroll: true,
-    speed: 20,
+    speed: 15,
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,15 +86,12 @@ const HomeCarousel = () => {
   useEffect(() => {
     if (!emblaApi) return () => {};
 
-    const onSelectCallback = () => {
-      reupdateCurrentSlidde();
-      initializeAutoskip();
-    };
-
-    emblaApi.on("select", onSelectCallback);
+    emblaApi.on("select", reupdateCurrentSlidde);
+    emblaApi.on("scroll", initializeAutoskip);
 
     return () => {
-      emblaApi.off("select", onSelectCallback);
+      emblaApi.off("select", reupdateCurrentSlidde);
+      emblaApi.off("scroll", initializeAutoskip);
     };
   }, [emblaApi, initializeAutoskip, reupdateCurrentSlidde]);
 
@@ -105,10 +101,18 @@ const HomeCarousel = () => {
         <ul className="embla__container">{renderSlides(homeCarouselSlides)}</ul>
       </div>
       <S.Controllers>
-        <S.Controller className="embla__prev" onClick={scrollPrev}>
+        <S.Controller
+          aria-label="Voltar para o slide anterior"
+          className="embla__prev"
+          onClick={scrollPrev}
+        >
           <FaChevronLeft />
         </S.Controller>
-        <S.Controller className="embla__next" onClick={scrollNext}>
+        <S.Controller
+          aria-label="Ir para o próximo slide"
+          className="embla__next"
+          onClick={scrollNext}
+        >
           <FaChevronRight />
         </S.Controller>
       </S.Controllers>
