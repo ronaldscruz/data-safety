@@ -2,9 +2,11 @@ import styled from "@emotion/styled";
 
 export const Container = styled.nav`
   display: inline-flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: var(--spacing-xl) var(--spacing-xl);
+  height: var(--menu-height);
+  padding: 0 var(--spacing-xl);
 `;
 
 export const Options = styled.ul`
@@ -18,5 +20,21 @@ export const Option = styled.li`
 
   &:last-child {
     margin-right: 0;
+  }
+`;
+
+export const DesktopMenuWrapper = styled.div`
+  display: flex;
+
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+`;
+
+export const MobileMenuWrapper = styled.div`
+  display: flex;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
   }
 `;

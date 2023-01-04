@@ -41,7 +41,7 @@ export const Controller = styled.button`
   color: white;
   font-size: 24px;
   cursor: pointer;
-  padding: 0 var(--spacing-xxl);
+  padding: 0 var(--spacing-xl);
 `;
 
 export const SlidesProgressContainer = styled.div`
