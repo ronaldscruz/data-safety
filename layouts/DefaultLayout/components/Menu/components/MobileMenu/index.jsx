@@ -33,7 +33,7 @@ const MobileMenu = ({ options = [] }) => {
         aria-labelledby="hamburger-button-label"
         onClick={() => toggleMenu(isOpen)}
       >
-        <FaBars />
+        <FaBars size={32} />
       </S.HamburgerButton>
       {/* Accessibility purpose */}
       <S.HamburguerButtonLabel id="hamburger-button-label">

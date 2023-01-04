@@ -12,12 +12,13 @@ const SlidesProgress = ({
         .fill(<></>)
         .map((_, dotIndex) => {
           return (
-            <S.SlideDot
-              key={dotIndex}
-              onClick={() => onNavigate(dotIndex)}
-              $selected={currentIndex === dotIndex}
-              aria-label={`Pular para o slide ${dotIndex + 1}`}
-            ></S.SlideDot>
+            <S.SlideDot key={dotIndex}>
+              <S.SlideDotButton
+                onClick={() => onNavigate(dotIndex)}
+                $selected={currentIndex === dotIndex}
+                aria-label={`Pular para o slide ${dotIndex + 1}`}
+              ></S.SlideDotButton>
+            </S.SlideDot>
           );
         });
     },

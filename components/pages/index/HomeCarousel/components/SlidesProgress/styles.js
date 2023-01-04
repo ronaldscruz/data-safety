@@ -1,21 +1,26 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const Container = styled.nav`
-  display: inline-flex;
+export const Container = styled.menu`
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: var(--spacing-lg);
 `;
 
-export const SlideDot = styled.button`
+export const SlideDot = styled.li`
+  display: inline-flex;
+  margin-right: var(--spacing-xxxl);
+`;
+
+export const SlideDotButton = styled.button`
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: white;
   border: none;
-  margin-right: var(--spacing-xxxl);
+
   cursor: pointer;
 
   background: rgba(255, 255, 255, 0.5);

@@ -9,14 +9,10 @@ export const HamburgerButton = styled.button`
   background: transparent;
   color: var(--text-color);
 
-  width: 36px;
-  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-
-  font-size: 32px;
 `;
 
 export const OptionsList = styled.ul`
