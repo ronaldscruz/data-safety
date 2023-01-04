@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.section`
   position: relative;
+  overflow: hidden;
 
   .embla {
     overflow: hidden;
@@ -46,7 +47,8 @@ export const Controller = styled.button`
 
 export const SlidesProgressContainer = styled.div`
   position: absolute;
+  width: 100%;
   bottom: var(--spacing-sm);
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 `;

@@ -6,7 +6,7 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: var(--spacing-sm);
+  padding: var(--spacing-lg);
 `;
 
 export const SlideDot = styled.button`
@@ -21,7 +21,7 @@ export const SlideDot = styled.button`
   background: rgba(255, 255, 255, 0.5);
 
   &:hover {
-    background: background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.75);
   }
 
   ${({ $selected }) =>
