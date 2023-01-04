@@ -6,7 +6,7 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: var(--padding-s);
+  padding: var(--spacing-sm);
 `;
 
 export const SlideDot = styled.button`
@@ -15,7 +15,7 @@ export const SlideDot = styled.button`
   border-radius: 50%;
   background: white;
   border: none;
-  margin-right: var(--margin-s);
+  margin-right: var(--spacing-sm);
   cursor: pointer;
 
   background: rgba(255, 255, 255, 0.5);

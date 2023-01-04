@@ -41,12 +41,12 @@ export const Controller = styled.button`
   color: white;
   font-size: 24px;
   cursor: pointer;
-  padding: 0 var(--padding-m);
+  padding: 0 var(--spacing-xxl);
 `;
 
 export const SlidesProgressContainer = styled.div`
   position: absolute;
-  bottom: var(--margin-s);
+  bottom: var(--spacing-sm);
   left: 50%;
   transform: translate(-50%, -50%);
 `;

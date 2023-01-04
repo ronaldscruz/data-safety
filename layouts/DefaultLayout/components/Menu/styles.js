@@ -4,16 +4,17 @@ export const Container = styled.nav`
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
-  padding: var(--padding-m) var(--padding-m);
+  padding: var(--spacing-xl) var(--spacing-xl);
 `;
 
 export const Options = styled.ul`
-  display: inline-flex;
-  align-items: flex-end;
+  display: flex;
+  align-items: center;
 `;
 
 export const Option = styled.li`
-  margin-right: var(--margin-m);
+  display: inline-flex;
+  margin-right: var(--spacing-xxl);
 
   &:last-child {
     margin-right: 0;
