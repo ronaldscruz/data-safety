@@ -46,11 +46,20 @@ export const HamburguerButtonLabel = styled.label`
 export const Option = styled.li`
   transition: height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 
+  a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+
   ${({ $visible = false }) =>
     $visible
       ? css`
           display: flex;
           align-items: center;
+          width: 100%;
           height: 47px;
           margin: 0 var(--spacing-xl);
           border-bottom: 1px solid rgba(0, 0, 0, 0.2);
