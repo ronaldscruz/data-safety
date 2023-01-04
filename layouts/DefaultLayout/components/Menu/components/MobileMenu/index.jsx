@@ -29,9 +29,16 @@ const MobileMenu = ({ options = [] }) => {
 
   return (
     <S.Container>
-      <S.HamburgerButton onClick={() => toggleMenu(isOpen)}>
+      <S.HamburgerButton
+        aria-labelledby="hamburger-button-label"
+        onClick={() => toggleMenu(isOpen)}
+      >
         <FaBars />
       </S.HamburgerButton>
+      {/* Accessibility purpose */}
+      <S.HamburguerButtonLabel id="hamburger-button-label">
+        Abrir menu
+      </S.HamburguerButtonLabel>
       <S.OptionsList $visible={isOpen}>
         {renderOptions(options, isOpen)}
       </S.OptionsList>

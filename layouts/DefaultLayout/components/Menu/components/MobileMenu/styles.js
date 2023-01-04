@@ -38,6 +38,11 @@ export const OptionsList = styled.ul`
         `};
 `;
 
+export const HamburguerButtonLabel = styled.label`
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+`;
+
 export const Option = styled.li`
   transition: height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 
@@ -56,7 +61,7 @@ export const Option = styled.li`
           }
         `
       : css`
-          font-size: 0;
+          opacity: 0;
           height: 0;
         `}
 `;

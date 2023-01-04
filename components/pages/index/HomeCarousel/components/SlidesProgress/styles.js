@@ -15,7 +15,7 @@ export const SlideDot = styled.button`
   border-radius: 50%;
   background: white;
   border: none;
-  margin-right: var(--spacing-sm);
+  margin-right: var(--spacing-xxxl);
   cursor: pointer;
 
   background: rgba(255, 255, 255, 0.5);

@@ -19,14 +19,21 @@ export const homeCarouselSlides = [
     title: "Serviços",
     description: "Conheça nossos serviços!",
     url: "/servicos",
-    importedImage: require("./assets/services.webp"),
+    importedImage: require("./assets/brand-highlight.png"),
     imageAlt: "Serviços",
   }),
   createSlide({
     title: "Mídia",
     description: "Acesse nosso conteúdo institucional",
     url: "/midia",
-    importedImage: require("./assets/media.jpeg"),
+    importedImage: require("./assets/our-priority-station.png"),
     imageAlt: "Mídia",
+  }),
+  createSlide({
+    title: "Tecnologias",
+    description: "Conheça as tecnologias de ponta utilizadas pela Data Safety",
+    url: "/tecnologias",
+    importedImage: require("./assets/our-priority-presentation.png"),
+    imageAlt: "Tecnologias",
   }),
 ];
