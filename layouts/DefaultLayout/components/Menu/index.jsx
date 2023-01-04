@@ -1,8 +1,25 @@
 import Image from "next/image";
 import * as S from "./styles";
 import Link from "next/link";
+import { menuOptions } from "./data";
 
 const Menu = () => {
+  const renderDesktopOptions = (options = []) => {
+    const optionsJSX = options.map((option) => (
+      <S.Options key={option.url}>
+        <S.Option>
+          <Link href={option.url}>{option.label}</Link>
+        </S.Option>
+      </S.Options>
+    ));
+
+    return <S.Options>{optionsJSX}</S.Options>;
+  };
+
+  const renderMobileMenu = () => {
+    return <></>;
+  };
+
   return (
     <S.Container>
       <Image
@@ -12,20 +29,8 @@ const Menu = () => {
         height={32}
         priority={true}
       />
-      <S.Options>
-        <S.Option>
-          <Link href="/servicos">Serviços</Link>
-        </S.Option>
-        <S.Option>
-          <Link href="/quem-somos">Quem somos</Link>
-        </S.Option>
-        <S.Option>
-          <Link href="/midia">Mídia</Link>
-        </S.Option>
-        <S.Option>
-          <Link href="/contato">Contato</Link>
-        </S.Option>
-      </S.Options>
+      {renderDesktopOptions(menuOptions)}
+      {renderMobileMenu(menuOptions)}
     </S.Container>
   );
 };
