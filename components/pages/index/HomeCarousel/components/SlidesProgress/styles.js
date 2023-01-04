@@ -5,18 +5,20 @@ export const Container = styled.menu`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   padding: var(--spacing-lg);
 `;
 
 export const SlideDot = styled.li`
   display: inline-flex;
   margin-right: var(--spacing-xxxl);
+
+  &:last-child {
+    margin-right: 0;
+  }
 `;
 
 export const SlideDotButton = styled.button`
-  width: 12px;
-  height: 12px;
+  padding: 8px;
   border-radius: 50%;
   background: white;
   border: none;

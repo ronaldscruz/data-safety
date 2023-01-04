@@ -47,7 +47,6 @@ export const Controller = styled.button`
 
 export const SlidesProgressContainer = styled.div`
   position: absolute;
-  width: 100%;
   bottom: var(--spacing-sm);
   left: 50%;
   transform: translateX(-50%);
