@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const Container = styled.nav`
@@ -21,6 +22,27 @@ export const Option = styled.li`
   &:last-child {
     margin-right: 0;
   }
+
+  ${({ $highlighted = false }) =>
+    $highlighted
+      ? css`
+          a {
+            height: 42px;
+            display: flex;
+            align-items: center;
+            padding: 0 var(--spacing-xl);
+            border-radius: 6px;
+            color: var(--negative-color);
+            font-weight: 600;
+
+            background: linear-gradient(
+              90deg,
+              var(--secondary-color) 0%,
+              var(--primary-color) 100%
+            );
+          }
+        `
+      : ""}
 `;
 
 export const DesktopMenuWrapper = styled.div`

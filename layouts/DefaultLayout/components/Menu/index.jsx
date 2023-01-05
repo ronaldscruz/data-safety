@@ -7,7 +7,7 @@ import MobileMenu from "./components/MobileMenu";
 const Menu = () => {
   const renderDesktopOptions = (options = []) => {
     const optionsJSX = options.map((option) => (
-      <S.Option key={option.url}>
+      <S.Option $highlighted={option.highlighted} key={option.url}>
         <Link href={option.url}>{option.label}</Link>
       </S.Option>
     ));
