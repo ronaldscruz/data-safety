@@ -13,6 +13,12 @@ export const Container = styled.nav`
   width: 100%;
   height: var(--menu-height);
   padding: 0 var(--spacing-xl);
+  background: var(--negative-color);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 7px 9px -7px rgba(0, 0, 0, 0.2);
 `;
 
 export const Options = styled.ul`

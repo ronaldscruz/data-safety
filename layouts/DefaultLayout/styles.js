@@ -11,3 +11,7 @@ export const TopContent = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const Header = styled.header`
+  margin-bottom: var(--menu-height);
+`;
