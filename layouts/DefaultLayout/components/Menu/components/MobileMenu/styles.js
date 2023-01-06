@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
+import { highlightedLinkCss } from "../../highlightedLinkCss";
 
 export const Container = styled.div``;
 
@@ -18,7 +19,7 @@ export const HamburgerButton = styled.button`
 export const OptionsList = styled.ul`
   position: absolute;
   left: 0;
-  width: 100%;
+  width: 100vw;
   background: #fff;
   z-index: 2;
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.2);
@@ -43,19 +44,17 @@ export const Option = styled.li`
   transition: height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 
   a {
-    width: 100%;
     height: 100%;
 
     display: flex;
     align-items: center;
   }
 
-  ${({ $visible = false }) =>
+  ${({ $visible = false, $highlighted = false }) =>
     $visible
       ? css`
           display: flex;
           align-items: center;
-          width: 100%;
           height: 47px;
           margin: 0 var(--spacing-xl);
           border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -64,6 +63,14 @@ export const Option = styled.li`
           &:last-child {
             border-bottom: none;
           }
+
+          ${$highlighted
+            ? css`
+                ${highlightedLinkCss};
+
+                padding: var(--spacing-xxxl) 0;
+              `
+            : ""};
         `
       : css`
           opacity: 0;

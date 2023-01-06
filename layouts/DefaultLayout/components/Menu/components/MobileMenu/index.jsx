@@ -8,7 +8,11 @@ const MobileMenu = ({ options = [] }) => {
 
   const renderOptions = (options, isOpen) => {
     return options.map((option) => (
-      <S.Option key={option.url} $visible={isOpen}>
+      <S.Option
+        key={option.url}
+        $visible={isOpen}
+        $highlighted={option.highlighted}
+      >
         <Link href={option.url}>{option.label}</Link>
       </S.Option>
     ));
