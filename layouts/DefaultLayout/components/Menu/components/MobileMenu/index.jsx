@@ -1,7 +1,7 @@
 import Link from "next/link";
 import * as S from "./styles";
 import { FaBars } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const MobileMenu = ({ options = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const MobileMenu = ({ options = [] }) => {
         $visible={isOpen}
         $highlighted={option.highlighted}
       >
-        <Link href={option.url}>{option.label}</Link>
+        <Link href={"/"}>{option.label}</Link>
       </S.Option>
     ));
   };
@@ -30,6 +30,16 @@ const MobileMenu = ({ options = [] }) => {
     if (isOpen) closeMenu();
     else openMenu();
   };
+
+  useEffect(() => {
+    const main = document.querySelector("main");
+
+    main.addEventListener("click", closeMenu);
+
+    return () => {
+      main.removeEventListener("click", closeMenu);
+    };
+  }, []);
 
   return (
     <S.Container>
