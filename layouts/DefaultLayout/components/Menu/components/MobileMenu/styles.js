@@ -44,8 +44,6 @@ export const Option = styled.li`
   transition: height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 
   a {
-    height: 100%;
-
     display: flex;
     align-items: center;
   }
@@ -70,7 +68,14 @@ export const Option = styled.li`
 
                 padding: var(--spacing-xxxl) 0;
               `
-            : ""};
+            : css`
+                a {
+                  &:active,
+                  &:hover {
+                    color: var(--primary-color);
+                  }
+                }
+              `};
         `
       : css`
           opacity: 0;

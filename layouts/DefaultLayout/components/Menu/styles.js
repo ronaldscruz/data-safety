@@ -4,6 +4,7 @@ import {
   MAX_MOBILE_BREAKPOINT,
   MIN_DESKTOP_BREAKPOINT,
 } from "../../../../constants/menuSwapBreakpoints";
+import { css } from "@emotion/react";
 
 export const Container = styled.nav`
   display: inline-flex;
@@ -21,13 +22,46 @@ export const Options = styled.ul`
 
 export const Option = styled.li`
   display: inline-flex;
-  margin-right: var(--spacing-xxl);
+  margin-right: var(--spacing-xxxl);
+  height: 100%;
+  align-items: center;
 
   &:last-child {
     margin-right: 0;
   }
 
-  ${({ $highlighted }) => ($highlighted ? highlightedLinkCss : "")};
+  a {
+    align-items: center;
+    height: 100%;
+  }
+
+  ${({ $highlighted }) =>
+    $highlighted
+      ? highlightedLinkCss
+      : css`
+          a {
+            position: relative;
+            transition: all 0.2s ease;
+
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 6px;
+              height: 2px;
+              width: 0;
+              background: var(--primary-color);
+              transition: all 0.2s ease;
+            }
+
+            &:hover {
+              text-shadow: 0px 0px 1px black;
+
+              &::before {
+                width: 100%;
+              }
+            }
+          }
+        `};
 `;
 
 export const DesktopMenuWrapper = styled.div`
