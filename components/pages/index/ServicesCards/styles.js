@@ -73,7 +73,7 @@ export const ServiceIconWrapper = styled.div`
   height: 86px;
 `;
 
-export const ServiceTitle = styled.h1`
+export const ServiceTitle = styled.h2`
   margin-bottom: var(--spacing-xl);
 `;
 

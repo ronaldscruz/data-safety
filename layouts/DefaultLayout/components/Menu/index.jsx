@@ -17,13 +17,15 @@ const Menu = () => {
 
   return (
     <S.Container>
-      <Image
-        src="/brand.png"
-        alt="Logomarca da Data Safety"
-        width={128}
-        height={32}
-        priority={true}
-      />
+      <Link href="/">
+        <Image
+          src="/brand.png"
+          alt="Logomarca da Data Safety"
+          width={128}
+          height={32}
+          priority={true}
+        />
+      </Link>
       <S.DesktopMenuWrapper>
         {renderDesktopOptions(menuOptions)}
       </S.DesktopMenuWrapper>
