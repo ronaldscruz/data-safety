@@ -15,5 +15,11 @@ export const highlightedLinkCss = css`
       var(--secondary-color) 0%,
       var(--primary-color) 100%
     );
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: brightness(120%);
+    }
   }
 `;
