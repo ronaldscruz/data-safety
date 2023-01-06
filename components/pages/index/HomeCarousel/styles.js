@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+import { MAX_MOBILE_BREAKPOINT } from "../../../../constants/menuSwapBreakpoints";
+
 export const Container = styled.section`
   position: relative;
   overflow: hidden;
@@ -34,6 +36,10 @@ export const Controllers = styled.div`
   width: 100%;
   left: 0;
   top: 50%;
+
+  @media only screen and (max-width: ${MAX_MOBILE_BREAKPOINT}) {
+    display: none;
+  }
 `;
 
 export const Controller = styled.button`

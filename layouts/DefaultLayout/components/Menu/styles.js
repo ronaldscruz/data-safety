@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
 import { highlightedLinkCss } from "./highlightedLinkCss";
+import {
+  MAX_MOBILE_BREAKPOINT,
+  MIN_DESKTOP_BREAKPOINT,
+} from "../../../../constants/menuSwapBreakpoints";
 
 export const Container = styled.nav`
   display: inline-flex;
@@ -29,7 +33,7 @@ export const Option = styled.li`
 export const DesktopMenuWrapper = styled.div`
   display: flex;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: ${MAX_MOBILE_BREAKPOINT}) {
     display: none;
   }
 `;
@@ -37,7 +41,7 @@ export const DesktopMenuWrapper = styled.div`
 export const MobileMenuWrapper = styled.div`
   display: flex;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MIN_DESKTOP_BREAKPOINT}) {
     display: none;
   }
 `;
