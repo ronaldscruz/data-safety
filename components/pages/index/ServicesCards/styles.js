@@ -70,7 +70,7 @@ export const ServiceItem = styled.li`
 
 export const ServiceIconWrapper = styled.div`
   margin-bottom: var(--spacing-xxxl);
-  height: 86px;
+  height: ${({ $iconSize = 86 }) => $iconSize};
 `;
 
 export const ServiceTitle = styled.h2`

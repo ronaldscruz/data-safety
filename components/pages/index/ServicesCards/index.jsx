@@ -12,11 +12,13 @@ const ServicesCards = () => {
       </svg>
     );
 
+    const iconSize = 86;
+
     const serviceCardsJSX = serviceCards.map((serviceCard) => (
       <S.ServiceItem key={serviceCard.title}>
-        <S.ServiceIconWrapper>
+        <S.ServiceIconWrapper $iconSize={iconSize}>
           <serviceCard.iconComponent
-            size={86}
+            size={iconSize}
             style={{ fill: "url(#brand-gradient)" }}
           />
         </S.ServiceIconWrapper>

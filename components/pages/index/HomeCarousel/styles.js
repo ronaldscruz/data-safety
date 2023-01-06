@@ -23,7 +23,8 @@ export const Container = styled.section`
 
     img {
       width: 100%;
-      height: 480px;
+      height: 620px;
+      max-height: calc(100vh - (var(--menu-height) * 2));
       object-fit: cover;
     }
   }
