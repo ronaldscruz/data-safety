@@ -16,6 +16,10 @@ a {
   color: var(--secondary-text-color);
 }
 
+b {
+  font-weight: 500;
+}
+
 h2,
 h3,
 h4,

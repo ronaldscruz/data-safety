@@ -24,12 +24,18 @@ export const Content = styled.div`
 
 export const Title = styled.h1`
   font-size: 48px;
-  margin-bottom: 86px;
-  text-align: center;
+  margin-bottom: var(--spacing-xl);
 
   @media only screen and (max-width: ${TITLE_BREAK_BREAKPOINT}) {
     font-size: 32px;
   }
+`;
+
+export const Description = styled.p`
+  margin-bottom: 86px;
+  text-align: center;
+  width: 768px;
+  max-width: 100%;
 `;
 
 export const ServicesList = styled.ul`

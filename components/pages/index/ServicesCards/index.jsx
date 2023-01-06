@@ -39,6 +39,10 @@ const ServicesCards = () => {
     <S.Container>
       <S.Content>
         <S.Title>Conheça nossos serviços</S.Title>
+        <S.Description>
+          Sua empresa não precisa correr mais <b>riscos</b>. Temos as soluções
+          ideais para <b>modernizar</b> e <b>proteger</b> seu negócio.
+        </S.Description>
         {renderServiceCards(serviceCards)}
       </S.Content>
     </S.Container>
