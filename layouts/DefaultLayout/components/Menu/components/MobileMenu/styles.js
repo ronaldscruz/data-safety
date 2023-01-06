@@ -70,6 +70,8 @@ export const Option = styled.li`
               `
             : css`
                 a {
+                  transition: all 0.2s ease;
+
                   &:active,
                   &:hover {
                     color: var(--primary-color);
