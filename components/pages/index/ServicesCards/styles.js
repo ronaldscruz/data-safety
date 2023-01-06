@@ -43,8 +43,6 @@ export const ServicesList = styled.ul`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: row;
-  flex-flow: row wrap;
 
   @media only screen and (max-width: ${TWO_COLS_BREAKPOINT}) {
     width: 700px;
