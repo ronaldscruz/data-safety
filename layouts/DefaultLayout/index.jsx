@@ -41,7 +41,7 @@ const DefaultLayout = ({
           <S.Header>
             <Menu />
           </S.Header>
-          <main>{children}</main>
+          <S.Main>{children}</S.Main>
         </S.TopContent>
         <footer>footer</footer>
       </S.Container>

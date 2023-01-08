@@ -15,3 +15,7 @@ export const TopContent = styled.div`
 export const Header = styled.header`
   margin-bottom: var(--menu-height);
 `;
+
+export const Main = styled.main`
+  background: var(--base-bg-color);
+`;

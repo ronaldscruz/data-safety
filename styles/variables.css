@@ -1,6 +1,7 @@
 :root {
   --main-font: Montserrat;
 
+  --base-bg-color: #eeeff1;
   --primary-color: #0084ff;
   --secondary-color: #4a19a6;
   --negative-color: #ffffff;
@@ -19,7 +20,7 @@
   --spacing-xxxl: 2rem;
 
   --spacing-section-x: 48px;
-  --spacing-section-y: 64px;
+  --spacing-section-y: 72px;
 
   --menu-height: 76px;
   --desktop-md-w: 1440px;

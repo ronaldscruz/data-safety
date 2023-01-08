@@ -24,6 +24,15 @@ const reasons = [
     imageFile: require("./assets/deal.png"),
     imageAlt: "Duas pessoas apertando as mãos, fechando negócio.",
   }),
+  createReason({
+    title: "Economizar dinheiro e aumentar a eficiência",
+    description: [
+      "A implementação de melhores medidas de segurança pode te ajudar a reduzir seu risco de downtime, permitindo que sua empresa opere de forma mais sólida e eficiente.",
+      "Além disso, investimentos em segurança podem gerar economia para o seu negócio, através da prevenção de ciberataques e vazamentos de informações. Um estudo feito pela National Small Business Association (NSBA) concluiu que 43% dos pequenos negócios já sofreram ciberataques. Destes, 69% passaram por altos prejuízos financeiros.",
+    ],
+    imageFile: require("./assets/stonks.png"),
+    imageAlt: "Pessoa visualizando um gráfico em crescimento.",
+  }),
 ];
 
 export default reasons;

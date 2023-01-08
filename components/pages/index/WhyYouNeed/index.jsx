@@ -1,19 +1,33 @@
 import * as S from "./styles";
-import Image from "next/image";
 import reasons from "./data";
 
 const WhyYouNeed = () => {
   const renderReasons = (reasons = []) => {
+    let mustRevert = true;
+
     return reasons.map((reason, reasonIndex) => {
       const { title, description, imageFile, imageAlt } = reason;
 
+      mustRevert = !mustRevert;
+
+      const descriptionJSX = Array.isArray(description) ? (
+        description.map((paragraph, paragraphIndex) => (
+          <S.ReasonDescription key={paragraphIndex}>
+            {paragraph}
+          </S.ReasonDescription>
+        ))
+      ) : (
+        <S.ReasonDescription>{description}</S.ReasonDescription>
+      );
+
       return (
-        <S.ReasonItem key={title}>
+        <S.ReasonItem key={title} $revert={mustRevert}>
           <S.ReasonTextWrapper>
             <S.ReasonTitle>
-              {reasonIndex + 1}. {title}
+              <S.TitleIndex>{reasonIndex + 1}. </S.TitleIndex>
+              {title}
             </S.ReasonTitle>
-            <S.ReasonDescription>{description}</S.ReasonDescription>
+            {descriptionJSX}
           </S.ReasonTextWrapper>
           {imageFile ? (
             <S.ReasonImageWrapper>

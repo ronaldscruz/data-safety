@@ -6,7 +6,7 @@ const SINGLE_COL_BREAKPOINT = "730px";
 const HORIZONTAL_SECTION_PADDING = "var(--spacing-section-x)";
 
 export const Container = styled.section`
-  padding: 64px ${HORIZONTAL_SECTION_PADDING};
+  padding: var(--spacing-section-y) ${HORIZONTAL_SECTION_PADDING};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +31,7 @@ export const Description = styled.p`
   text-align: center;
   width: 768px;
   max-width: 100%;
+  font-size: var(--h2-size);
 `;
 
 export const ServicesList = styled.ul`
@@ -39,7 +40,7 @@ export const ServicesList = styled.ul`
   flex-wrap: wrap;
 
   @media only screen and (max-width: ${TWO_COLS_BREAKPOINT}) {
-    width: 700px;
+    width: 660px;
   }
 
   @media only screen and (max-width: ${SINGLE_COL_BREAKPOINT}) {
@@ -53,9 +54,11 @@ export const ServiceItem = styled.li`
   align-items: center;
   width: 320px;
   max-width: 100%;
-  height: 400px;
-  padding: 0 var(--spacing-xxl);
+  height: 430px;
+  padding: var(--spacing-xxxl) var(--spacing-xxl);
   margin-right: var(--spacing-xl);
+  background: var(--negative-color);
+  border-radius: 12px;
 
   &:last-child {
     margin-right: 0;
