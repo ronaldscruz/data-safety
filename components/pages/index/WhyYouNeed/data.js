@@ -20,7 +20,7 @@ const reasons = [
   createReason({
     title: "Proteger sua reputação e a confiança na sua empresa",
     description:
-      "Um ciberataque pode causar danos severos à reputação da sua empresa, fazendo com que seus clientes percam a confiança no seu negócio. Investir em segurança te protege desses incidences e mantém a confiança de seus usuários.",
+      "Um ciberataque pode causar danos severos à reputação da sua empresa, fazendo com que seus clientes percam a confiança no seu negócio. Investir em segurança te protege desses incidentes e mantém a confiança de seus usuários.",
     imageFile: require("./assets/deal.png"),
     imageAlt: "Duas pessoas apertando as mãos, fechando negócio.",
   }),
