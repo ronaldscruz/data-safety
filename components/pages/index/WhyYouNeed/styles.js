@@ -9,7 +9,11 @@ export const Container = styled.section`
   justify-content: center;
   border-top-left-radius: 64px;
   border-top-right-radius: 64px;
-  /* box-shadow: 0px -7px 9px -12px rgba(0, 0, 0, 0.2); */
+
+  @media only screen and (max-width: 425px) {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+  }
 `;
 
 export const Content = styled.article`
