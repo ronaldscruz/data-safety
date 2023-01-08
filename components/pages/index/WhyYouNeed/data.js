@@ -10,12 +10,6 @@ const createReason = ({
   imageAlt,
 });
 
-/**
- * A cyber attack or data breach can seriously damage your company's reputation.
- * Customers may lose trust in your business and be hesitant to do business with you in the future.
- * Investing in cybersecurity can help prevent such incidents and protect your company's reputation.
- */
-
 const reasons = [
   createReason({
     title: "Proteger sua reputação e a confiança na sua empresa",
