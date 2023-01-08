@@ -2,9 +2,8 @@ import styled from "@emotion/styled";
 
 const TWO_COLS_BREAKPOINT = "1380px";
 const SINGLE_COL_BREAKPOINT = "730px";
-const TITLE_BREAK_BREAKPOINT = "432px";
 
-const HORIZONTAL_SECTION_PADDING = "var(--spacing-xl)";
+const HORIZONTAL_SECTION_PADDING = "var(--spacing-section-x)";
 
 export const Container = styled.section`
   padding: 64px ${HORIZONTAL_SECTION_PADDING};
@@ -24,12 +23,7 @@ export const Content = styled.div`
 
 export const Title = styled.h1`
   text-align: center;
-  font-size: 48px;
   margin-bottom: var(--spacing-xl);
-
-  @media only screen and (max-width: ${TITLE_BREAK_BREAKPOINT}) {
-    font-size: 32px;
-  }
 `;
 
 export const Description = styled.p`
@@ -60,7 +54,7 @@ export const ServiceItem = styled.li`
   width: 320px;
   max-width: 100%;
   height: 400px;
-  padding: 0 ${HORIZONTAL_SECTION_PADDING};
+  padding: 0 var(--spacing-xxl);
   margin-right: var(--spacing-xl);
 
   &:last-child {
@@ -78,9 +72,7 @@ export const ServiceIconWrapper = styled.div`
   height: ${({ $iconSize = 86 }) => $iconSize};
 `;
 
-export const ServiceTitle = styled.h2`
-  margin-bottom: var(--spacing-xl);
-`;
+export const ServiceTitle = styled.h2``;
 
 export const ServiceDescription = styled.p`
   max-width: 100%;

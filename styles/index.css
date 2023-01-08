@@ -20,6 +20,15 @@ b {
   font-weight: 500;
 }
 
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  margin-bottom: var(--spacing-xl);
+}
+
 h2,
 h3,
 h4,

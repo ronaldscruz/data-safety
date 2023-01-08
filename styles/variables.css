@@ -18,6 +18,21 @@
   --spacing-xxl: 1.5rem;
   --spacing-xxxl: 2rem;
 
+  --spacing-section-x: 48px;
+  --spacing-section-y: 64px;
+
   --menu-height: 76px;
   --desktop-md-w: 1440px;
+  --desktop-sm-w: 1280px;
+
+  --h1-size: 48px;
+  --h2-size: 24px;
+}
+
+@media only screen and (max-width: 425px) {
+  :root {
+    --h1-size: 32px;
+
+    --spacing-section-x: 32px;
+  }
 }
