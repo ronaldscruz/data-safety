@@ -26,15 +26,18 @@ export const SlideDotButton = styled.button`
   cursor: pointer;
 
   background: rgba(255, 255, 255, 0.5);
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.75);
-  }
+  transition: all 0.2s ease;
 
   ${({ $selected }) =>
     $selected
       ? css`
+          transform: scale(1.25);
           background: rgba(255, 255, 255, 1);
         `
-      : ""};
+      : css`
+          &:hover {
+            background: rgba(255, 255, 255, 0.75);
+            transform: scale(1.1);
+          }
+        `};
 `;
