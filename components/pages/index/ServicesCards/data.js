@@ -20,25 +20,25 @@ const serviceCards = [
     iconComponent: BsShieldLock,
     title: "Segurança e proteção",
     description:
-      "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.",
+      "Os serviços de segurança da informação garantem a proteção dos dados e sistemas contra ameaças virtuais. Técnicas de criptografia, controle de acesso e monitoramento são usadas para garantir a privacidade e a integridade dos dados.",
   }),
   createServiceCard({
     iconComponent: BsCloudArrowUp,
     title: "Nuvem",
     description:
-      "Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.",
+      "Serviços de nuvem permitem armazenamento, processamento e acesso a dados e aplicações através de internet, sem a necessidade de hardware próprio, usando serviços como AWS e AZURE.",
   }),
   createServiceCard({
     iconComponent: BsHddStack,
     title: "Consultoria de TI",
     description:
-      "Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.Posuere libero varius.",
+      "Os serviços de consultoria de TI ajudam empresas a alcançar seus objetivos de negócios otimizando e implementando sistemas de TI personalizados para melhorar eficiência, segurança e rentabilidade.",
   }),
   createServiceCard({
     iconComponent: BsTools,
     title: "Professional Services",
     description:
-      "Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.Aenean aliquam molestie leo, vitae iaculis nisl.Si u mundo tá muito paradis?",
+      "Nossa equipe de Professional Services oferece design, planejamento e execução de projetos de alta complexidade técnica. Oferecemos soluções criativas, colaboração próxima com clientes e suporte contínuo para garantir sucesso em seus projetos.",
   }),
 ];
 

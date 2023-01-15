@@ -54,7 +54,7 @@ export const ServiceItem = styled.li`
   align-items: center;
   width: 320px;
   max-width: 100%;
-  height: 430px;
+  height: 460px;
   padding: var(--spacing-xxxl) var(--spacing-xxl);
   margin-right: var(--spacing-xl);
   background: var(--negative-color);
