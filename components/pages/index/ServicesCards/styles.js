@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const TWO_COLS_BREAKPOINT = "1380px";
+const TWO_COLS_BREAKPOINT = "1420px";
 const SINGLE_COL_BREAKPOINT = "730px";
 
 const HORIZONTAL_SECTION_PADDING = "var(--spacing-section-x)";
@@ -52,11 +52,11 @@ export const ServiceItem = styled.li`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
+  width: 319px;
   max-width: 100%;
   height: 460px;
   padding: var(--spacing-xxxl) var(--spacing-xxl);
-  margin-right: var(--spacing-xl);
+  margin-right: var(--spacing-lg);
   background: var(--negative-color);
   border-radius: 12px;
 

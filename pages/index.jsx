@@ -3,6 +3,7 @@ import DefaultLayout from "../layouts/DefaultLayout";
 import HomeCarousel from "../components/pages/index/HomeCarousel";
 import ServicesCards from "../components/pages/index/ServicesCards";
 import WhyYouNeed from "../components/pages/index/WhyYouNeed";
+import WhyChoose from "../components/pages/index/WhyChoose";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeCarousel />
       <ServicesCards />
       <WhyYouNeed />
+      <WhyChoose />
     </DefaultLayout>
   );
 }

@@ -6,6 +6,7 @@ export const Container = styled.section`
   padding: var(--spacing-section-y) var(--spacing-section-x);
   background: var(--negative-color);
   display: flex;
+  width: 100%;
   justify-content: center;
   border-top-left-radius: 64px;
   border-top-right-radius: 64px;
