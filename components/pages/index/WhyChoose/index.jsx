@@ -17,15 +17,14 @@ const WhyChoose = () => {
           <S.ReasonText>
             <h2>Excelência em serviço</h2>
             <p>
-              A Data Safety é a escolha certa para garantir a segurança de TI de
-              sua empresa. Com soluções avançadas e uma equipe altamente
-              qualificada, oferecemos a excelência no serviço para proteger seus
-              dados e sistemas contra ameaças cibernéticas. Nós entendemos a
-              importância da segurança de sua informação e trabalhamos
-              constantemente para garantir a satisfação do cliente. Confie em
-              nós para manter sua empresa segura e protegida. Faça agora uma
-              avaliação gratuita de segurança de TI e descubra como podemos
-              ajudar a proteger sua empresa.
+              A <b>Data Safety</b> é a escolha certa para garantir a segurança
+              de TI de sua empresa. Com soluções avançadas e uma equipe{" "}
+              <b>altamente qualificada</b>, oferecemos a excelência no serviço
+              para proteger seus dados e sistemas contra{" "}
+              <b>ameaças cibernéticas</b>. Nós entendemos a importância da
+              segurança de sua informação e trabalhamos constantemente para
+              garantir a satisfação do cliente. Faça agora uma avaliação{" "}
+              <b>gratuita</b>.
             </p>
           </S.ReasonText>
         </S.ReasonWrapper>

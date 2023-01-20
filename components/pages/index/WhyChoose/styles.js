@@ -32,11 +32,30 @@ export const ReasonWrapper = styled.div`
           flex-direction: row-reverse;
         `
       : ""};
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 export const ReasonMedia = styled.div`
   width: 50%;
   position: relative;
+
+  @media screen and (max-width: 1024px) {
+    width: 70%;
+    margin-bottom: var(--spacing-xxxl);
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    margin-bottom: var(--spacing-xxxl);
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    margin-bottom: var(--spacing-xxxl);
+  }
 `;
 
 export const ReasonBoxShadow = styled.div`
@@ -52,4 +71,9 @@ export const ReasonBoxShadow = styled.div`
 export const ReasonText = styled.div`
   width: 50%;
   padding: 0 var(--spacing-section-x);
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding: 0;
+  }
 `;
