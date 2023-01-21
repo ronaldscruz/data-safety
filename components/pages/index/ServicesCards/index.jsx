@@ -1,17 +1,9 @@
 import * as S from "./styles";
 import serviceCards from "./data";
+import GradientSvg from "../../../GradientSVG";
 
 const ServicesCards = () => {
   const renderServiceCards = (serviceCards = []) => {
-    const gradientSvgJSX = (
-      <svg width="0" height="0">
-        <linearGradient id="brand-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
-          <stop stopColor="var(--primary-color)" offset="0%" />
-          <stop stopColor="var(--secondary-color)" offset="100%" />
-        </linearGradient>
-      </svg>
-    );
-
     const iconSize = 86;
 
     const serviceCardsJSX = serviceCards.map((serviceCard) => (
@@ -29,7 +21,7 @@ const ServicesCards = () => {
 
     return (
       <>
-        {gradientSvgJSX}
+        <GradientSvg />
         <S.ServicesList>{serviceCardsJSX}</S.ServicesList>
       </>
     );

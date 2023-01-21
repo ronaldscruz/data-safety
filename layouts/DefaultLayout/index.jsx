@@ -2,6 +2,7 @@ import Head from "next/head";
 import * as S from "./styles";
 import Menu from "./components/Menu";
 import { defaultHeadParams } from "../../constants/defaultHeadParams";
+import Footer from "./components/Footer";
 
 const DefaultLayout = ({
   children = <></>,
@@ -43,7 +44,7 @@ const DefaultLayout = ({
           </S.Header>
           <S.Main>{children}</S.Main>
         </S.TopContent>
-        <footer>footer</footer>
+        <Footer />
       </S.Container>
     </>
   );
