@@ -4,6 +4,7 @@ import HomeCarousel from "../components/pages/index/HomeCarousel";
 import ServicesCards from "../components/pages/index/ServicesCards";
 import WhyYouNeed from "../components/pages/index/WhyYouNeed";
 import WhyChoose from "../components/pages/index/WhyChoose";
+import Contact from "../components/pages/index/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ServicesCards />
       <WhyYouNeed />
       <WhyChoose />
+      <Contact />
     </DefaultLayout>
   );
 }
