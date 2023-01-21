@@ -8,6 +8,7 @@ const securityHeaders = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
   async headers() {
     return [
       {
@@ -16,6 +17,15 @@ const nextConfig = {
         headers: securityHeaders,
       },
     ];
+  },
+
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
+
+    return config;
   },
 };
 
