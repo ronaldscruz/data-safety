@@ -40,7 +40,7 @@ const WhyChoose = () => {
           <S.ReasonText>
             <h2>Soluções específicas para seu negócio</h2>
             <p>
-              Nós entendemos que cada negócio tem suas necessidades únicas de
+              Nós entendemos que cada negócio tem suas necessidades únicas de{" "}
               <b>segurança da informação</b>. É por isso que oferecemos{" "}
               <b>soluções personalizadas</b> para garantir a proteção de suas
               informações sensíveis e a tranquilidade de sua empresa. Nossas
