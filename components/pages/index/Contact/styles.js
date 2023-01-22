@@ -26,16 +26,29 @@ export const Content = styled.div`
 
 export const LeftContent = styled.div`
   width: 50%;
+  margin-right: var(--spacing-xxxl);
 
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
 `;
 
+export const TextContent = styled.div`
+  margin-bottom: var(--spacing-xxxl);
+`;
+
+export const ArtContainer = styled.div`
+  width: 90%;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export const FormContainer = styled.div`
   width: 50%;
 
-  media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
   }
 `;
