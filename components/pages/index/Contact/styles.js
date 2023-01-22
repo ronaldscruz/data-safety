@@ -10,7 +10,6 @@ export const Container = styled.section`
     var(--primary-color) 100%
   );
 
-  height: 400px;
   color: var(--negative-color);
 `;
 
@@ -19,12 +18,24 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   padding: var(--spacing-section-y) var(--spacing-section-x);
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftContent = styled.div`
   width: 50%;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const FormContainer = styled.div`
   width: 50%;
+
+  media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
