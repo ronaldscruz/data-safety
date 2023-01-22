@@ -1,3 +1,4 @@
+import ContactForm from "./ContactForm";
 import * as S from "./styles";
 
 const Contact = () => {
@@ -10,7 +11,9 @@ const Contact = () => {
             Fale com nossa equipe de especialistas em segurança da informação
           </h2>
         </S.LeftContent>
-        <S.FormContainer>form goes here 8-)</S.FormContainer>
+        <S.FormContainer>
+          <ContactForm />
+        </S.FormContainer>
       </S.Content>
     </S.Container>
   );
