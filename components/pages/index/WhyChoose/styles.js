@@ -9,6 +9,10 @@ export const Container = styled.section`
   padding: var(--spacing-section-y) var(--spacing-section-x);
 
   width: 100%;
+
+  b {
+    font-weight: 600;
+  }
 `;
 
 export const Content = styled.article`
