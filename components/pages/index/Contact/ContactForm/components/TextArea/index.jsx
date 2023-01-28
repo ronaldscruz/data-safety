@@ -1,6 +1,6 @@
 import * as S from "./styles";
 
-const Input = ({
+const TextArea = ({
   type = "text",
   name = "",
   label = "",
@@ -10,15 +10,16 @@ const Input = ({
   return (
     <S.Container>
       <S.Label htmlFor={name}>{label}</S.Label>
-      <S.StyledInput
+      <S.StyledTextArea
         type={type}
         id={name}
         name={name}
         placeholder={placeholder}
+        rows={4}
         {...props}
       />
     </S.Container>
   );
 };
 
-export default Input;
+export default TextArea;

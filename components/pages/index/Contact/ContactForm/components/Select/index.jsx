@@ -1,6 +1,6 @@
 import * as S from "./styles";
 
-const Select = ({ name = "", label = "", options = [] }) => {
+const Select = ({ name = "", label = "", options = [], ...props }) => {
   const renderOptions = () => {
     return options.map((option) => (
       <option key={option.value} value={option.value}>
@@ -12,7 +12,7 @@ const Select = ({ name = "", label = "", options = [] }) => {
   return (
     <S.Container>
       <S.Label htmlFor={name}>{label}</S.Label>
-      <S.StyledSelect id={name} name={name}>
+      <S.StyledSelect id={name} name={name} {...props}>
         {renderOptions()}
       </S.StyledSelect>
     </S.Container>
