@@ -34,7 +34,6 @@ const ContactForm = () => {
         <Input
           name="firstName"
           label="Primeiro nome *"
-          placeholder="Arthur"
           required
           onChange={(e) =>
             setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -64,6 +63,7 @@ const ContactForm = () => {
           onChange={(e) =>
             setFormData({ ...formData, [e.target.name]: e.target.value })
           }
+          placeholder="Ex: Gostaria de saber mais sobre o serviço X"
         />
       </S.Row>
       <S.Row>
