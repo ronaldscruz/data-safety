@@ -5,7 +5,14 @@ const WhyChoose = () => {
     <S.Container>
       <S.Content>
         <S.Title>Por que escolher a Data Safety?</S.Title>
-
+        <S.AboutUs>
+          Oferecemos soluções de <b>segurança digital</b> de primeira linha,
+          garantindo a <b>proteção de informações críticas</b> e{" "}
+          <b>privacidade dos dados</b>. Com tecnologia avançada e{" "}
+          <b>equipe especializada</b>, a empresa lidera a <b>proteção</b> contra
+          ameaças cibernéticas. Escolha a tranquilidade de soluções
+          personalizadas e segurança de alta qualidade com <b>Data Safety</b>.
+        </S.AboutUs>
         <S.ReasonWrapper>
           <S.ReasonMedia>
             <video autoPlay loop muted>

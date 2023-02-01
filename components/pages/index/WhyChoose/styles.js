@@ -22,6 +22,11 @@ export const Content = styled.article`
 
 export const Title = styled.h1`
   text-align: center;
+  margin-bottom: var(--spacing-xl);
+`;
+
+export const AboutUs = styled.p`
+  text-align: center;
   margin-bottom: var(--spacing-section-y);
 `;
 

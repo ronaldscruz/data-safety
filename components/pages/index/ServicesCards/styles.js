@@ -4,6 +4,7 @@ const TWO_COLS_BREAKPOINT = "1420px";
 const SINGLE_COL_BREAKPOINT = "730px";
 
 const HORIZONTAL_SECTION_PADDING = "var(--spacing-section-x)";
+const MAX_CARDS_PER_LINE = 4;
 
 export const Container = styled.section`
   padding: var(--spacing-section-y) ${HORIZONTAL_SECTION_PADDING};
@@ -35,38 +36,41 @@ export const Description = styled.p`
 `;
 
 export const ServicesList = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 319px);
+  grid-template-rows: 520px;
+  grid-gap: var(--spacing-lg);
+  margin: 0 auto;
+  max-width: 100%;
+  justify-content: center;
 
-  @media only screen and (max-width: ${TWO_COLS_BREAKPOINT}) {
-    width: 660px;
+  @media (max-width: 1430px) {
+    grid-template-columns: repeat(2, 319px);
   }
 
-  @media only screen and (max-width: ${SINGLE_COL_BREAKPOINT}) {
-    width: 320px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 319px);
+  }
+
+  @media (max-width: 380px) {
+    grid-template-columns: repeat(1, 100%);
   }
 `;
 
 export const ServiceItem = styled.li`
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 319px;
-  max-width: 100%;
-  height: 460px;
+  height: 520px;
+
   padding: var(--spacing-xxxl) var(--spacing-xxl);
-  margin-right: var(--spacing-lg);
   background: var(--negative-color);
   border-radius: 12px;
 
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @media only screen and (max-width: ${TWO_COLS_BREAKPOINT}) {
-    margin-right: 0;
-    margin-bottom: var(--spacing-xl);
+  @media (max-width: 380px) {
+    width: 100%;
   }
 `;
 
