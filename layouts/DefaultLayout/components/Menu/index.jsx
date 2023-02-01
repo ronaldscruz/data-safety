@@ -8,7 +8,18 @@ const Menu = () => {
   const renderDesktopOptions = (options = []) => {
     const optionsJSX = options.map((option) => (
       <S.Option $highlighted={option.highlighted} key={option.url}>
-        <Link href={option.url}>{option.label}</Link>
+        <Link
+          href={option.url}
+          onClick={(e) => {
+            e.preventDefault();
+
+            document.querySelector(option.url).scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+        >
+          {option.label}
+        </Link>
       </S.Option>
     ));
 

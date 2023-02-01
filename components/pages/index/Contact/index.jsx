@@ -5,7 +5,7 @@ import ContactArt from "./assets/contact-art.svg";
 
 const Contact = () => {
   return (
-    <S.Container>
+    <S.Container id="contact">
       <S.Content>
         <S.LeftContent>
           <S.TextContent>

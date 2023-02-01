@@ -42,7 +42,7 @@ const WhyYouNeed = () => {
   };
 
   return (
-    <S.Container>
+    <S.Container id="why-you-need">
       <S.Content>
         <S.Title>
           Por que você precisa de ajuda para proteger seu negócio?

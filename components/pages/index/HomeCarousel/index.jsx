@@ -96,7 +96,7 @@ const HomeCarousel = () => {
   }, [emblaApi, initializeAutoskip, reupdateCurrentSlidde]);
 
   return (
-    <S.Container className="embla">
+    <S.Container id="home-carousel" className="embla">
       <div className="embla__viewport" ref={carouselRef}>
         <ul className="embla__container">{renderSlides(homeCarouselSlides)}</ul>
       </div>

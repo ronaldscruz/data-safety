@@ -8,6 +8,10 @@ body {
   color: var(--text-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   display: flex;
   cursor: pointer;
