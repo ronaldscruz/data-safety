@@ -67,7 +67,7 @@ const ContactForm = () => {
         />
       </S.Row>
       <S.Row>
-        <Button>Enviar</Button>
+        <Button>Enviar mensagem</Button>
       </S.Row>
     </S.Container>
   );
