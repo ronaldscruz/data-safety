@@ -1,10 +1,6 @@
 import styled from "@emotion/styled";
 
-const TWO_COLS_BREAKPOINT = "1420px";
-const SINGLE_COL_BREAKPOINT = "730px";
-
 const HORIZONTAL_SECTION_PADDING = "var(--spacing-section-x)";
-const MAX_CARDS_PER_LINE = 4;
 
 export const Container = styled.section`
   padding: var(--spacing-section-y) ${HORIZONTAL_SECTION_PADDING};
@@ -36,25 +32,12 @@ export const Description = styled.p`
 `;
 
 export const ServicesList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(4, 319px);
-  grid-template-rows: 520px;
-  grid-gap: var(--spacing-lg);
-  margin: 0 auto;
-  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-
-  @media (max-width: 1430px) {
-    grid-template-columns: repeat(2, 319px);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 319px);
-  }
-
-  @media (max-width: 380px) {
-    grid-template-columns: repeat(1, 100%);
-  }
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
 `;
 
 export const ServiceItem = styled.li`
@@ -69,6 +52,9 @@ export const ServiceItem = styled.li`
   background: var(--negative-color);
   border-radius: 12px;
 
+  // spacing between items
+  margin: 0 var(--spacing-md) var(--spacing-xxl);
+
   @media (max-width: 380px) {
     width: 100%;
   }
@@ -79,7 +65,9 @@ export const ServiceIconWrapper = styled.div`
   height: ${({ $iconSize = 86 }) => $iconSize};
 `;
 
-export const ServiceTitle = styled.h2``;
+export const ServiceTitle = styled.h2`
+  text-align: center;
+`;
 
 export const ServiceDescription = styled.p`
   max-width: 100%;
