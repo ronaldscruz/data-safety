@@ -52,7 +52,6 @@ export const ServiceItem = styled.li`
   background: var(--negative-color);
   border-radius: 12px;
 
-  // spacing between items
   margin: 0 var(--spacing-md) var(--spacing-xxl);
 
   @media (max-width: 380px) {
