@@ -25,6 +25,7 @@ const Footer = () => {
         href={socialMediaLinks[socialMedia]}
         target="_blank"
         rel="noreferrer"
+        aria-label={`Link para o perfil da Data Safety no ${socialMedia}`}
       >
         {iconsMap[socialMedia]}
       </S.SocialLink>
