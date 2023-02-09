@@ -9,12 +9,40 @@ import GradientSVG from "../../../../components/GradientSVG";
 import { socialMediaLinks } from "./data";
 import { menuOptions } from "../Menu/data";
 import Link from "next/link";
+import smoothScrollTo from "../../../../utils/smoothScrollTo";
 
 const Footer = () => {
+  const renderSocialMediaLinks = (socialMediaLinks) => {
+    const iconsMap = {
+      linkedin: <LinkedinIcon />,
+      instagram: <InstagramIcon />,
+      facebook: <FacebookIcon />,
+    };
+
+    return Object.keys(socialMediaLinks).map((socialMedia) => (
+      <S.SocialLink
+        key={socialMedia}
+        href={socialMediaLinks[socialMedia]}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {iconsMap[socialMedia]}
+      </S.SocialLink>
+    ));
+  };
+
   const renderMenuOptions = (menuOptions = []) => {
     return menuOptions.map((menuOption) => (
       <S.MenuLinkItem key={menuOption.url} href={menuOption.url}>
-        <Link href={menuOption.url}>{menuOption.label}</Link>
+        <Link
+          href={menuOption.url}
+          onClick={(e) => {
+            e.preventDefault();
+            smoothScrollTo(menuOption.url);
+          }}
+        >
+          {menuOption.label}
+        </Link>
       </S.MenuLinkItem>
     ));
   };
@@ -25,15 +53,7 @@ const Footer = () => {
       <S.Container>
         <S.Content>
           <S.SocialMedia>
-            <S.SocialLink href={socialMediaLinks.linkedin}>
-              <LinkedinIcon />
-            </S.SocialLink>
-            <S.SocialLink href={socialMediaLinks.instagram}>
-              <InstagramIcon />
-            </S.SocialLink>
-            <S.SocialLink href={socialMediaLinks.facebook}>
-              <FacebookIcon />
-            </S.SocialLink>
+            {renderSocialMediaLinks(socialMediaLinks)}
           </S.SocialMedia>
           <S.MenuLinks>{renderMenuOptions(menuOptions)}</S.MenuLinks>
           <S.CopyrightText>

@@ -2,21 +2,10 @@ import Link from "next/link";
 import * as S from "./styles";
 import { FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import smoothScrollTo from "../../../../../../utils/smoothScrollTo";
 
 const MobileMenu = ({ options = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const renderOptions = (options, isOpen) => {
-    return options.map((option) => (
-      <S.Option
-        key={option.url}
-        $visible={isOpen}
-        $highlighted={option.highlighted}
-      >
-        <Link href={"/"}>{option.label}</Link>
-      </S.Option>
-    ));
-  };
 
   const openMenu = () => {
     setIsOpen(true);
@@ -29,6 +18,27 @@ const MobileMenu = ({ options = [] }) => {
   const toggleMenu = (isOpen) => {
     if (isOpen) closeMenu();
     else openMenu();
+  };
+
+  const renderOptions = (options, isOpen) => {
+    return options.map((option) => (
+      <S.Option
+        key={option.url}
+        $visible={isOpen}
+        $highlighted={option.highlighted}
+      >
+        <Link
+          href={option.url}
+          onClick={(e) => {
+            e.preventDefault();
+            closeMenu();
+            smoothScrollTo(option.url);
+          }}
+        >
+          {option.label}
+        </Link>
+      </S.Option>
+    ));
   };
 
   useEffect(() => {

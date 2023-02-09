@@ -2,7 +2,7 @@ import * as S from "./styles";
 
 const WhyChoose = () => {
   return (
-    <S.Container id="why-choose">
+    <S.Container id="sobre-nos">
       <S.Content>
         <S.Title>Por que escolher a Data Safety?</S.Title>
         <S.AboutUs>

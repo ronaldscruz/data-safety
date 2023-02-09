@@ -11,19 +11,19 @@ const createMenuOption = ({
 export const menuOptions = [
   createMenuOption({
     label: "Serviços",
-    url: "#services",
+    url: "#servicos",
   }),
   createMenuOption({
     label: "Por que se proteger?",
-    url: "#why-you-need",
+    url: "#por-que-se-proteger",
   }),
   createMenuOption({
     label: "Sobre nós",
-    url: "#why-choose",
+    url: "#sobre-nos",
   }),
   createMenuOption({
     label: "Fale com um especialista",
-    url: "#contact",
+    url: "#fale-com-um-especialista",
     highlighted: true,
   }),
 ];
