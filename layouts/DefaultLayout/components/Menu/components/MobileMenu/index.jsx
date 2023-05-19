@@ -2,7 +2,7 @@ import Link from "next/link";
 import * as S from "./styles";
 import { FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import smoothScrollTo from "../../../../../../utils/smoothScrollTo";
+import navigateTo from "../../../../../../utils/navigateTo";
 
 const MobileMenu = ({ options = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ const MobileMenu = ({ options = [] }) => {
           onClick={(e) => {
             e.preventDefault();
             closeMenu();
-            smoothScrollTo(option.url);
+            navigateTo(option.url);
           }}
         >
           {option.label}

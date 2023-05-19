@@ -3,7 +3,7 @@ import * as S from "./styles";
 import Link from "next/link";
 import { menuOptions } from "./data";
 import MobileMenu from "./components/MobileMenu";
-import smoothScrollTo from "../../../../utils/smoothScrollTo";
+import navigateTo from "../../../../utils/navigateTo";
 
 const Menu = () => {
   const renderDesktopOptions = (options = []) => {
@@ -14,7 +14,7 @@ const Menu = () => {
           onClick={(e) => {
             e.preventDefault();
 
-            smoothScrollTo(option.url);
+            navigateTo(option.url);
           }}
         >
           {option.label}

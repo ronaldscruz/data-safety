@@ -9,7 +9,7 @@ import GradientSVG from "../../../../components/GradientSVG";
 import { socialMediaLinks } from "./data";
 import { menuOptions } from "../Menu/data";
 import Link from "next/link";
-import smoothScrollTo from "../../../../utils/smoothScrollTo";
+import navigateTo from "../../../../utils/navigateTo";
 
 const Footer = () => {
   const renderSocialMediaLinks = (socialMediaLinks) => {
@@ -39,7 +39,7 @@ const Footer = () => {
           href={menuOption.url}
           onClick={(e) => {
             e.preventDefault();
-            smoothScrollTo(menuOption.url);
+            navigateTo(menuOption.url);
           }}
         >
           {menuOption.label}
