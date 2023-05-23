@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-import { MAX_MOBILE_BREAKPOINT } from "../../../../constants/menuSwapBreakpoints";
+import { MAX_MOBILE_BREAKPOINT } from "../../constants/menuSwapBreakpoints";
 
 export const Container = styled.section`
   position: relative;

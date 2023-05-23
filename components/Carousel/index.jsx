@@ -5,15 +5,13 @@ import * as S from "./styles";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
-import { homeCarouselSlides } from "./data";
-
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import SlidesProgress from "./components/SlidesProgress";
 
 let autoSkipInterval;
 let AUTO_SKIP_DELAY_MS = 6000;
 
-const HomeCarousel = () => {
+const Carousel = ({ slides = [] }) => {
   const [carouselRef, emblaApi] = useEmblaCarousel({
     loop: true,
     dragFree: false,
@@ -98,7 +96,7 @@ const HomeCarousel = () => {
   return (
     <S.Container id="home-carousel" className="embla">
       <div className="embla__viewport" ref={carouselRef}>
-        <ul className="embla__container">{renderSlides(homeCarouselSlides)}</ul>
+        <ul className="embla__container">{renderSlides(slides)}</ul>
       </div>
       <S.Controllers>
         <S.Controller
@@ -118,7 +116,7 @@ const HomeCarousel = () => {
       </S.Controllers>
       <S.SlidesProgressContainer>
         <SlidesProgress
-          totalCount={homeCarouselSlides.length}
+          totalCount={slides.length}
           currentIndex={currentIndex}
           onNavigate={(index) => scrollTo(index)}
         />
@@ -127,4 +125,4 @@ const HomeCarousel = () => {
   );
 };
 
-export default HomeCarousel;
+export default Carousel;
