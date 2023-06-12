@@ -8,6 +8,7 @@ const securityHeaders = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  pageExtensions: ["jsx", "tsx"],
 
   async headers() {
     return [
