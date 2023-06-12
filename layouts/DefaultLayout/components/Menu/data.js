@@ -9,10 +9,10 @@ const createMenuOption = ({
 });
 
 export const menuOptions = [
-  createMenuOption({
-    label: "Blog",
-    url: "/blog",
-  }),
+  // createMenuOption({
+  //   label: "Blog",
+  //   url: "/blog",
+  // }),
   createMenuOption({
     label: "Serviços",
     url: "#servicos",
