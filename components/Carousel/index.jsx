@@ -61,11 +61,13 @@ const Carousel = ({ slides = [] }) => {
     return slides.map((slide) => (
       <li key={slide.url} className="embla__slide">
         <article>
+          <h1>{slide.title}</h1>
           <Image
             src={slide.importedImage}
             alt={slide.imageAlt}
             priority={true}
           />
+          <p>{slide.description}</p>
         </article>
       </li>
     ));

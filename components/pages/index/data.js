@@ -1,9 +1,18 @@
+const createIcon = ({ title, importedIcon }) => {
+  return {
+    title,
+    url,
+  };
+};
+
 const createSlide = ({
   title = "",
   description = "",
   url = "",
   importedImage,
   imageAlt,
+  align = "left",
+  icons = [],
 }) => {
   return {
     title,
@@ -11,29 +20,61 @@ const createSlide = ({
     url,
     importedImage,
     imageAlt,
+    align,
+    icons,
   };
 };
 
 export const homeCarouselSlides = [
   createSlide({
-    title: "Serviços",
-    description: "Conheça nossos serviços!",
-    url: "/servicos",
-    importedImage: require("./assets/brand-highlight.png"),
+    title: "Nossa prioridade é a sua proteção digital",
+    description: "Proteja os dados da sua empresa com os serviços Data Safety",
+    url: "#por-que-se-proteger",
+    importedImage: require("./assets/1-nossa-prioridade.png"),
     imageAlt: "Serviços",
+    align: "left",
   }),
   createSlide({
-    title: "Mídia",
-    description: "Acesse nosso conteúdo institucional",
-    url: "/midia",
-    importedImage: require("./assets/our-priority-station.png"),
+    title: "Precisando proteger os dados da sua empresa?",
+    description:
+      "Solicite agora mesmo uma consultoria gratuita para o seu negócio",
+    url: "#contato",
+    importedImage: require("./assets/2-precisando-proteger.png"),
     imageAlt: "Mídia",
+    align: "left",
   }),
   createSlide({
-    title: "Tecnologias",
-    description: "Conheça as tecnologias de ponta utilizadas pela Data Safety",
-    url: "/tecnologias",
-    importedImage: require("./assets/our-priority-presentation.png"),
+    title: "Nossos serviços",
+    description: "Pensou em segurança? Pensou em Data Safety!",
+    url: "#servicos",
+    importedImage: require("./assets/3-nossos-servicos.png"),
     imageAlt: "Tecnologias",
+    align: "center",
+    icons: [
+      // createIcon({
+      //   title: "Segurança e proteção",
+      //   importedIcon: require("./assets/icons/seguranca-e-protecao.png"),
+      // }),
+      // createIcon({
+      //   title: "Nuvem",
+      //   importedIcon: require("./assets/icons/nuvem.png"),
+      // }),
+      // createIcon({
+      //   title: "Pentest",
+      //   importedIcon: require("./assets/icons/pentest.png"),
+      // }),
+      // createIcon({
+      //   title: "Workspace",
+      //   importedIcon: require("./assets/icons/workspace.png"),
+      // }),
+      // createIcon({
+      //   title: "Infraestrutura",
+      //   importedIcon: require("./assets/icons/infraestrutura.png"),
+      // }),
+      // createIcon({
+      //   title: "Backup",
+      //   importedIcon: require("./assets/icons/backup.png"),
+      // }),
+    ],
   }),
 ];

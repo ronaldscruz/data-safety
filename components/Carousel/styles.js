@@ -1,6 +1,16 @@
 import styled from "@emotion/styled";
 
 import { MAX_MOBILE_BREAKPOINT } from "../../constants/menuSwapBreakpoints";
+import { css } from "@emotion/react";
+
+const SLIDE_ARROW_SIZE = "64px";
+const SLIDE_X_MARGIN_CSS = css`
+  margin: 0 calc(${SLIDE_ARROW_SIZE} + var(--spacing-xl));
+
+  @media only screen and (max-width: 820px) {
+    margin: 0 calc(${SLIDE_ARROW_SIZE} - var(--spacing-xl));
+  }
+`;
 
 export const Container = styled.section`
   position: relative;
@@ -20,12 +30,46 @@ export const Container = styled.section`
   .embla__slide {
     flex: 0 0 100%;
     min-width: 0;
+    position: relative;
+    justify-content: center;
 
-    img {
-      width: 100%;
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: var(--desktop-md-w);
       height: 620px;
       max-height: calc(100vh - (var(--menu-height) * 2));
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-weight: 800;
+      z-index: 3;
+      color: var(--negative-color);
+
+      ${SLIDE_X_MARGIN_CSS};
+
+      margin-bottom: var(--spacing-lg) !important;
+    }
+
+    img {
+      height: 100%;
       object-fit: cover;
+      position: absolute;
+      left: 0;
+    }
+
+    p {
+      width: fit-content;
+      background: var(--negative-color);
+      font-style: italic;
+      font-weight: 500;
+      padding: var(--spacing-xxs) var(--spacing-sm);
+      border-radius: 6px;
+      z-index: 3;
+
+      ${SLIDE_X_MARGIN_CSS};
     }
   }
 `;
