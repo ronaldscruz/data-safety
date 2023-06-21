@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 
-import { MAX_MOBILE_BREAKPOINT } from "../../constants/menuSwapBreakpoints";
-import { css } from "@emotion/react";
+import {MAX_MOBILE_BREAKPOINT} from "../../constants/menuSwapBreakpoints";
+import {css} from "@emotion/react";
 
 const SLIDE_ARROW_SIZE = "64px";
 const SLIDE_X_MARGIN_CSS = css`
@@ -10,6 +11,54 @@ const SLIDE_X_MARGIN_CSS = css`
   @media only screen and (max-width: 820px) {
     margin: 0 calc(${SLIDE_ARROW_SIZE} - var(--spacing-xl));
   }
+`;
+
+export const CarouselButtonContainer = styled.button`
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+`;
+
+export const CarouselContent = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: var(--desktop-md-w);
+  height: 620px;
+  max-height: calc(100vh - (var(--menu-height) * 2));
+  margin: 0 auto;
+`;
+
+export const CarouselTitle = styled.h1`
+  z-index: 3;
+  color: var(--negative-color);
+  font-weight: 800;
+
+  ${SLIDE_X_MARGIN_CSS};
+
+  margin-bottom: var(--spacing-lg) !important;
+`;
+
+export const CarouselBackground = styled(Image)`
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+`;
+
+export const CarouselText = styled.p`
+  width: fit-content;
+  background: var(--negative-color);
+  font-style: italic;
+  font-weight: 600;
+  padding: var(--spacing-xxs) var(--spacing-sm);
+  border-radius: 6px;
+  z-index: 3;
+  margin-bottom: var(--spacing-sm);
+
+  ${SLIDE_X_MARGIN_CSS};
 `;
 
 export const Container = styled.section`
@@ -32,46 +81,21 @@ export const Container = styled.section`
     min-width: 0;
     position: relative;
     justify-content: center;
-
-    article {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: var(--desktop-md-w);
-      height: 620px;
-      max-height: calc(100vh - (var(--menu-height) * 2));
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-weight: 800;
-      z-index: 3;
-      color: var(--negative-color);
-
-      ${SLIDE_X_MARGIN_CSS};
-
-      margin-bottom: var(--spacing-lg) !important;
-    }
-
-    img {
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      left: 0;
-    }
-
-    p {
-      width: fit-content;
-      background: var(--negative-color);
-      font-style: italic;
-      font-weight: 500;
-      padding: var(--spacing-xxs) var(--spacing-sm);
-      border-radius: 6px;
-      z-index: 3;
-
-      ${SLIDE_X_MARGIN_CSS};
-    }
   }
+`;
+
+export const IconsContainer = styled.ul`
+  width: 100%;
+`
+
+export const IconContainer = styled.li`
+  display: inline-flex;
+`;
+
+export const IconContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Controllers = styled.div`

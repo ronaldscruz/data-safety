@@ -1,19 +1,19 @@
-const createIcon = ({ title, importedIcon }) => {
+const createIcon = ({title, importedIcon}) => {
   return {
     title,
-    url,
+    importedIcon,
   };
 };
 
 const createSlide = ({
-  title = "",
-  description = "",
-  url = "",
-  importedImage,
-  imageAlt,
-  align = "left",
-  icons = [],
-}) => {
+                       title = "",
+                       description = "",
+                       url = "",
+                       importedImage,
+                       imageAlt,
+                       align = "left",
+                       icons = [],
+                     }) => {
   return {
     title,
     description,
@@ -26,23 +26,23 @@ const createSlide = ({
 };
 
 export const homeCarouselSlides = [
-  createSlide({
-    title: "Nossa prioridade é a sua proteção digital",
-    description: "Proteja os dados da sua empresa com os serviços Data Safety",
-    url: "#por-que-se-proteger",
-    importedImage: require("./assets/1-nossa-prioridade.png"),
-    imageAlt: "Serviços",
-    align: "left",
-  }),
-  createSlide({
-    title: "Precisando proteger os dados da sua empresa?",
-    description:
-      "Solicite agora mesmo uma consultoria gratuita para o seu negócio",
-    url: "#contato",
-    importedImage: require("./assets/2-precisando-proteger.png"),
-    imageAlt: "Mídia",
-    align: "left",
-  }),
+  // createSlide({
+  //   title: "Nossa prioridade é a sua proteção digital",
+  //   description: "Proteja os dados da sua empresa com os serviços Data Safety",
+  //   url: "#por-que-se-proteger",
+  //   importedImage: require("./assets/1-nossa-prioridade.png"),
+  //   imageAlt: "Serviços",
+  //   align: "left",
+  // }),
+  // createSlide({
+  //   title: "Precisando proteger os dados da sua empresa?",
+  //   description:
+  //     "Solicite agora mesmo uma consultoria gratuita para o seu negócio",
+  //   url: "#fale-com-um-especialista",
+  //   importedImage: require("./assets/2-precisando-proteger.png"),
+  //   imageAlt: "Mídia",
+  //   align: "left",
+  // }),
   createSlide({
     title: "Nossos serviços",
     description: "Pensou em segurança? Pensou em Data Safety!",
@@ -51,30 +51,30 @@ export const homeCarouselSlides = [
     imageAlt: "Tecnologias",
     align: "center",
     icons: [
-      // createIcon({
-      //   title: "Segurança e proteção",
-      //   importedIcon: require("./assets/icons/seguranca-e-protecao.png"),
-      // }),
-      // createIcon({
-      //   title: "Nuvem",
-      //   importedIcon: require("./assets/icons/nuvem.png"),
-      // }),
-      // createIcon({
-      //   title: "Pentest",
-      //   importedIcon: require("./assets/icons/pentest.png"),
-      // }),
-      // createIcon({
-      //   title: "Workspace",
-      //   importedIcon: require("./assets/icons/workspace.png"),
-      // }),
-      // createIcon({
-      //   title: "Infraestrutura",
-      //   importedIcon: require("./assets/icons/infraestrutura.png"),
-      // }),
-      // createIcon({
-      //   title: "Backup",
-      //   importedIcon: require("./assets/icons/backup.png"),
-      // }),
+      createIcon({
+        title: "Segurança e proteção",
+        importedIcon: require("./assets/icons/shield.png"),
+      }),
+      createIcon({
+        title: "Nuvem",
+        importedIcon: require("./assets/icons/cloud.png"),
+      }),
+      createIcon({
+        title: "Pentest",
+        importedIcon: require("./assets/icons/gear.png"),
+      }),
+      createIcon({
+        title: "Workspace",
+        importedIcon: require("./assets/icons/screen.png"),
+      }),
+      createIcon({
+        title: "Infraestrutura",
+        importedIcon: require("./assets/icons/network.png"),
+      }),
+      createIcon({
+        title: "Backup",
+        importedIcon: require("./assets/icons/cloud-upgrade.png"),
+      }),
     ],
   }),
 ];
