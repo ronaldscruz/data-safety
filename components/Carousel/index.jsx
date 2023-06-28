@@ -1,19 +1,9 @@
 import {useCallback, useEffect, useState} from "react";
 
 import * as S from "./styles";
-import {
-  CarouselBackground,
-  CarouselButtonContainer,
-  CarouselContent,
-  CarouselText,
-  CarouselTitle,
-  IconContainer,
-  IconContentContainer,
-  IconsContainer
-} from "./styles";
+import {CarouselBackground, CarouselButtonContainer, CarouselContent, CarouselText, CarouselTitle} from "./styles";
 
 import useEmblaCarousel from "embla-carousel-react";
-import Image from "next/image";
 
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import SlidesProgress from "./components/SlidesProgress";
@@ -70,27 +60,28 @@ const Carousel = ({slides = []}) => {
   
   const renderSlides = useCallback((slides = []) => {
     return slides.map((slide) => {
-      const IconsJSX = slide.icons.length > 0 ?
-        (
-          <IconsContainer>
-            {
-              slide.icons.map(icon => {
-                return (
-                  <IconContainer key={icon.url} className="icon">
-                    <IconContentContainer>
-                      <Image
-                        src={icon.importedIcon}
-                        alt={icon.imageAlt}
-                        priority={true}
-                      />
-                      <h2>{icon.title}</h2>
-                    </IconContentContainer>
-                  </IconContainer>
-                )
-              })
-            }
-          </IconsContainer>
-        ) : null;
+      // const IconsJSX = slide.icons.length > 0 ?
+      //   (
+      //     <IconsContainer>
+      //       {
+      //         slide.icons.map(icon => {
+      //           return (
+      //             <IconContainer key={icon.url} className="icon">
+      //               <IconContentContainer>
+      //                 <Image
+      //                   src={icon.importedIcon}
+      //                   alt={icon.imageAlt}
+      //                   priority={true}
+      //                   height={48}
+      //                 />
+      //                 <IconTitle>{icon.title}</IconTitle>
+      //               </IconContentContainer>
+      //             </IconContainer>
+      //           )
+      //         })
+      //       }
+      //     </IconsContainer>
+      //   ) : null;
       
       return (
         <li key={slide.url} className="embla__slide">
@@ -99,13 +90,17 @@ const Carousel = ({slides = []}) => {
               <CarouselTitle>
                 {slide.title}
               </CarouselTitle>
-              {IconsJSX}
+              {/*{IconsJSX}*/}
               <CarouselBackground
                 src={slide.importedImage}
                 alt={slide.imageAlt}
                 priority={true}
               />
-              <CarouselText>{slide.description}</CarouselText>
+              <CarouselText>
+                <span>
+                  {slide.description}
+                </span>
+              </CarouselText>
             </CarouselContent>
           </CarouselButtonContainer>
         </li>

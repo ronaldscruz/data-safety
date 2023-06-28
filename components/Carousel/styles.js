@@ -35,6 +35,7 @@ export const CarouselTitle = styled.h1`
   z-index: 3;
   color: var(--negative-color);
   font-weight: 800;
+  text-align: left;
 
   ${SLIDE_X_MARGIN_CSS};
 
@@ -50,15 +51,22 @@ export const CarouselBackground = styled(Image)`
 
 export const CarouselText = styled.p`
   width: fit-content;
-  background: var(--negative-color);
   font-style: italic;
   font-weight: 600;
-  padding: var(--spacing-xxs) var(--spacing-sm);
-  border-radius: 6px;
   z-index: 3;
   margin-bottom: var(--spacing-sm);
+  text-align: left;
 
   ${SLIDE_X_MARGIN_CSS};
+
+  span {
+    background: var(--negative-color);
+    padding: var(--spacing-xxs) var(--spacing-sm);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    line-height: 2;
+    border-radius: 6px;
+  }
 `;
 
 export const Container = styled.section`
@@ -86,6 +94,7 @@ export const Container = styled.section`
 
 export const IconsContainer = styled.ul`
   width: 100%;
+  z-index: 3
 `
 
 export const IconContainer = styled.li`
@@ -96,6 +105,10 @@ export const IconContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const IconTitle = styled.h2`
+  color: var(--negative-color);
 `;
 
 export const Controllers = styled.div`

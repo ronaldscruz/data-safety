@@ -26,26 +26,26 @@ const createSlide = ({
 };
 
 export const homeCarouselSlides = [
-  // createSlide({
-  //   title: "Nossa prioridade é a sua proteção digital",
-  //   description: "Proteja os dados da sua empresa com os serviços Data Safety",
-  //   url: "#por-que-se-proteger",
-  //   importedImage: require("./assets/1-nossa-prioridade.png"),
-  //   imageAlt: "Serviços",
-  //   align: "left",
-  // }),
-  // createSlide({
-  //   title: "Precisando proteger os dados da sua empresa?",
-  //   description:
-  //     "Solicite agora mesmo uma consultoria gratuita para o seu negócio",
-  //   url: "#fale-com-um-especialista",
-  //   importedImage: require("./assets/2-precisando-proteger.png"),
-  //   imageAlt: "Mídia",
-  //   align: "left",
-  // }),
   createSlide({
-    title: "Nossos serviços",
-    description: "Pensou em segurança? Pensou em Data Safety!",
+    title: "Nossa prioridade é a sua proteção digital",
+    description: "Proteja os dados da sua empresa com os serviços Data Safety",
+    url: "#por-que-se-proteger",
+    importedImage: require("./assets/1-nossa-prioridade.png"),
+    imageAlt: "Serviços",
+    align: "left",
+  }),
+  createSlide({
+    title: "Precisando proteger os dados da sua empresa?",
+    description:
+      "Solicite agora mesmo uma consultoria gratuita para o seu negócio",
+    url: "#fale-com-um-especialista",
+    importedImage: require("./assets/2-precisando-proteger.png"),
+    imageAlt: "Mídia",
+    align: "left",
+  }),
+  createSlide({
+    title: "Pensou em segurança?",
+    description: "Pensou em Data Safety!",
     url: "#servicos",
     importedImage: require("./assets/3-nossos-servicos.png"),
     imageAlt: "Tecnologias",
