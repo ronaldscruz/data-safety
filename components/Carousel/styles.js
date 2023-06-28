@@ -44,6 +44,7 @@ export const CarouselTitle = styled.h1`
 
 export const CarouselBackground = styled(Image)`
   height: 100%;
+  width: 100%;
   object-fit: cover;
   position: absolute;
   left: 0;
