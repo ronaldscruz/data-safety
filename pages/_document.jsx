@@ -1,7 +1,5 @@
 import {Head, Html, Main, NextScript} from "next/document";
 
-import Script from 'next/script';
-
 export default function Document() {
   return (
     <Html lang="pt-br">
@@ -13,16 +11,6 @@ export default function Document() {
           data-domains="datasafety.tec.br"
           src="https://umami.techessecurity.com.br/umami.js"
         ></script>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-WCZXYZ2MHS"/>
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'G-WCZXYZ2MHS');
-          `}
-        </Script>
       </Head>
       <body>
       <Main/>
