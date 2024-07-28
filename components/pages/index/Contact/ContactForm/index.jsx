@@ -18,7 +18,7 @@ const ContactForm = () => {
 
     const { firstName, contactReason, additionalInfo } = formData;
 
-    const contactPhone = "5511944031024";
+    const contactPhone = "TEMPORARILY_REMOVED";
 
     const textContent = `Olá! Me chamo ${firstName}, gostaria de falar sobre "${contactReason}", pode me ajudar? ${additionalInfo}`;
     const encodedTextContent = encodeURI(textContent);
