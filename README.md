@@ -10,11 +10,13 @@ Data Safety is a digital security company focused on providing top-notch solutio
 
 The user interface was designed by me to provide an intuitive and engaging user experience, highlighting the company’s expertise and services.
 
+![Screenshot showcasing Data Safety website design](./readme-assets/lighthouse.png)
+
 ### High Lighthouse Scores
 
 While not perfect, the site achieves high scores on Lighthouse benchmarks, averaging 98 across SEO, accessibility, performance, and best practices, ensuring a reliable and efficient user experience.
 
-![Screenshot showcasing Data Safety website website benchmarking results](./readme-assets/lighthouse.png)
+![Screenshot showcasing Data Safety website benchmarking results](./readme-assets/lighthouse.png)
 
 ### Google Search Ranking
 
