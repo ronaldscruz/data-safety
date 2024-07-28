@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Data Safety - Ensuring Your Digital Security
 
-## Getting Started
+Welcome to the official repository of the Data Safety website, a project dedicated to showcasing the services and expertise of a digital security company.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Data Safety is a digital security company focused on providing top-notch solutions to protect your data. The website is designed to effectively communicate their services and the value they offer to clients. This project was developed by me as a pro bono effort for a friend, and while the current URL is temporary for showcasing purposes, the original domain is owned by the company founders.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Custom UI Design by Me
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The user interface was designed by me to provide an intuitive and engaging user experience, highlighting the company’s expertise and services.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### High Lighthouse Scores
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+While not perfect, the site achieves high scores on Lighthouse benchmarks, averaging 98 across SEO, accessibility, performance, and best practices, ensuring a reliable and efficient user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Screenshot showcasing Data Safety website website benchmarking results](./readme-assets/lighthouse.png)
 
-## Learn More
+### Google Search Ranking
 
-To learn more about Next.js, take a look at the following resources:
+Ranked first on Google search results, demonstrating the effectiveness of our SEO strategy and the relevance of the site content.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot showcasing Data Safety website ranked first on Google search results](./readme-assets/google-ranking.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Social Media Meta Tags (aka Open Graph)
 
-## Deploy on Vercel
+![Screenshot showcasing Data Safety social media metatags in action](./readme-assets/opengraph.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js 14: Utilizes the latest version of Next.js, leveraging its powerful features for optimal performance and scalability.
